@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { Raleway } from "next/font/google";
 import { TiThMenu } from "react-icons/ti";
 import { useState } from "react";
+import Image from "next/image";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -15,8 +16,13 @@ const Navbar = () => {
     <nav
       className={`${raleway.className} fixed z-20 h-16 w-full top-0 left-0 flex justify-between px-8 items-center overflow-y-hidden bg-white`}
     >
-      <div className="w-24 lg:w-28">
-        <img src="./logo.png" alt="" />
+      <div className="w-24 h-24 relative lg:h-26 lg:w-26">
+        <Image
+          fill
+          alt="Logo"
+          src={"/logo.png"}
+          className="object-cover w-full object-center"
+        />
       </div>
 
       <div className="md:flex hidden items-center gap-4 text-xl font-semibold">
@@ -27,13 +33,13 @@ const Navbar = () => {
           HOME
         </Link>
         <Link
-          href={"/"}
+          href={"about"}
           className="hover:text-red-600 duration-200 transition-colors ease-out"
         >
           ABOUT
         </Link>
         <Link
-          href={"/"}
+          href={""}
           className="hover:text-red-600 duration-200 transition-colors ease-out"
         >
           WORK
@@ -67,7 +73,7 @@ const Navbar = () => {
             <Link onClick={() => setStatus(!status)} href={"/"}>
               HOME
             </Link>
-            <Link onClick={() => setStatus(!status)} href={"/"}>
+            <Link onClick={() => setStatus(!status)} href={"about"}>
               ABOUT
             </Link>
             <Link onClick={() => setStatus(!status)} href={"/"}>

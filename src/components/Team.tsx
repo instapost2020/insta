@@ -1,152 +1,102 @@
 import Image from "next/image";
 import React from "react";
+import localFont from "next/font/local";
+import { motion } from "framer-motion";
+import { Badge } from "./ui/badge";
+import { Raleway } from "next/font/google";
+const bhineka = localFont({
+  src: "../../public/fonts/Bhineka.ttf",
+});
+
+const raleway = Raleway({
+  subsets: ["latin"],
+});
 
 const Team = () => {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
-      <div className="text-center py-12">
-        <h2 className="text-base font-bold text-indigo-600">
-          We have the best equipment in the market
-        </h2>
-        <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-400">
-          Check our awesome team members
-        </h1>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col shadow-sm shadow-gray-500/50 justify-center items-center">
-          <div className="w-full h-72 relative">
+    <div className="h-auto  bg-yellow-400 pb-8 rounded-t-3xl md:pb-12">
+      <h1
+        className={`${raleway.className} mb-12 py-8 text-4xl w-full font-bold uppercase text-center `}
+      >
+        How we work?
+      </h1>
+      <div className="grid h-auto px-4 gap-12 lg:gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="w-full py-4 px-8 bg-white justify-center items-end md:justify-end shadow-xl rounded-lg">
+          <div className="flex sm:float-end mx-auto md:mx-0 w-20 h-20 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
             <Image
+              src={"/jel.jpg"}
               fill
-              alt="Random"
-              className="object-top object-contain md:object-cover w-full"
-              src="/jel.jpg"
+              alt="Jel"
+              className="object-cover rounded-full borded-2 border-yellow-400"
             />
           </div>
-          <div className="text-center py-8 sm:py-6">
-            <p className="text-xl text-gray-700 font-bold mb-2">
+          <div>
+            <h2 className="text-gray-800 text-3xl font-semibold">
               Jelynson Patricio
+            </h2>
+            <p className="mt-2 text-gray-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              dolores deserunt ea doloremque natus error, rerum quas odio
+              quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus
+              consequuntur!
             </p>
-            <p className="text-base text-gray-400 font-normal">Owner</p>
+          </div>
+          <div className="flex justify-end mt-4 gap-2">
+            <Badge className="bg-red-600">Owner</Badge>
+            <Badge className="bg-yellow-400">Strategist</Badge>
           </div>
         </div>
-        <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col justify-center items-center shadow-sm shadow-gray-500/50 ">
-          <div className="w-full h-72 relative">
+        <div className="w-full py-4 px-8 bg-white justify-center items-end md:justify-end shadow-xl rounded-lg">
+          <div className="flex sm:float-end mx-auto md:mx-0 w-20 h-20 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
             <Image
+              src={"/juls.jpg"}
               fill
-              alt="adad"
-              className="object-top object-contain md:object-cover w-full "
-              src="/juls.jpg"
+              alt="Jel"
+              className="object-cover rounded-full borded-2 border-yellow-400"
             />
           </div>
-          <div className="text-center py-8 sm:py-6">
-            <p className="text-xl text-gray-700 font-bold mb-2">
+          <div>
+            <h2 className="text-gray-800 text-3xl font-semibold">
               Julius Patricio
+            </h2>
+            <p className="mt-2 text-gray-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              dolores deserunt ea doloremque natus error, rerum quas odio
+              quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus
+              consequuntur!
             </p>
-            <p className="text-base text-gray-400 font-normal">Owner</p>
+          </div>
+          <div className="flex justify-end mt-4 gap-2">
+            <Badge className="bg-red-600">Owner</Badge>
+            <Badge className="bg-yellow-400">Director</Badge>
           </div>
         </div>
-        <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col justify-center items-center shadow-sm shadow-gray-500/50 ">
-          <div className="w-full h-72 relative">
+        <div className="w-full py-4 px-8 bg-white justify-center items-end md:justify-end shadow-xl rounded-lg">
+          <div className="flex sm:float-end mx-auto md:mx-0 w-20 h-20 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
             <Image
+              src={"/sarah.jpg"}
               fill
-              alt="qeqeq"
-              className="object-top object-contain md:object-cover w-full rounded-md"
-              src="/sarah.jpg"
+              alt="Jel"
+              className="object-cover rounded-full borded-2 border-yellow-400"
             />
           </div>
-          <div className="text-center py-8 sm:py-6">
-            <p className="text-xl text-gray-700 font-bold mb-2">
+          <div>
+            <h2 className="text-gray-800 text-3xl font-semibold">
               Sarah Mae Napay
-            </p>
-            <p className="text-base text-gray-400 font-normal">
-              General Manager
-            </p>
-          </div>
-        </div>
-        <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col justify-center items-center shadow-sm shadow-gray-500/50 ">
-          <div className="w-full h-72 relative">
-            <Image
-              fill
-              alt="xcvxcv"
-              className="object-center object-contain md:object-cover w-full "
-              src="/cha.png"
-            />
-          </div>
-          <div className="text-center py-8 sm:py-6">
-            <p className="text-xl text-gray-700 font-bold mb-2">
-              Charrish Mae Napay
-            </p>
-            <p className="text-base text-gray-400 font-normal">
-              Human Resources
+            </h2>
+            <p className="mt-2 text-gray-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              dolores deserunt ea doloremque natus error, rerum quas odio
+              quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus
+              consequuntur!
             </p>
           </div>
-        </div>
-        <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col justify-center items-center shadow-sm shadow-gray-500/50 ">
-          <div className="w-full h-72 relative">
-            <Image
-              fill
-              alt="sdfsfsf"
-              className="object-top object-contain md:object-cover w-full rounded-md"
-              src="/trex.jpg"
-            />
-          </div>
-          <div className="text-center py-8 sm:py-6">
-            <p className="text-xl text-gray-700 font-bold mb-2">
-              Maria Trexie Hamilton
-            </p>
-            <p className="text-base text-gray-400 font-normal">
-              Creative Manager?
-            </p>
-          </div>
-        </div>
-        <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col justify-center items-center shadow-sm shadow-gray-500/50 ">
-          <div className="w-full h-72 relative">
-            <Image
-              fill
-              alt="utyughj"
-              className="object-center object-contain md:object-cover w-full rounded-md"
-              src="/ja.jpg"
-            />
-          </div>
-          <div className="text-center py-8 sm:py-6">
-            <p className="text-xl text-gray-700 font-bold mb-2">Ja Jose</p>
-            <p className="text-base text-gray-400 font-normal">I dunno</p>
-          </div>
-        </div>
-        <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col justify-center items-center shadow-sm shadow-gray-500/50 ">
-          <div className="w-full h-72 relative">
-            <Image
-              fill
-              alt="utyughj"
-              className="object-center object-contain md:object-cover w-full rounded-md"
-              src="/villar.JPG"
-            />
-          </div>
-          <div className="text-center py-8 sm:py-6">
-            <p className="text-xl text-gray-700 font-bold mb-2">
-              Maria Kristina Villar
-            </p>
-            <p className="text-base text-gray-400 font-normal">I dunno</p>
-          </div>
-        </div>
-        <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col justify-center items-center shadow-sm shadow-gray-500/50 ">
-          <div className="w-full h-72 relative">
-            <Image
-              fill
-              alt="utyughj"
-              className="object-center object-contain md:object-cover w-full rounded-md"
-              src="/gerald.png"
-            />
-          </div>
-          <div className="text-center py-8 sm:py-6">
-            <p className="text-xl text-gray-700 font-bold mb-2">
-              Jason Gerald Gotangho
-            </p>
-            <p className="text-base text-gray-400 font-normal">I dunno</p>
+          <div className="flex justify-end mt-4 gap-2">
+            <Badge className="bg-red-600">General Manager</Badge>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

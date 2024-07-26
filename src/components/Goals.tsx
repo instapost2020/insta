@@ -122,7 +122,7 @@ const Goals = () => {
     // </section>
 
     <section
-      className={`${raleway.className} text-gray-600 bg-[#FDF278] body-font`}
+      className={`${raleway.className} text-gray-600 bg-white body-font`}
     >
       <div className="container px-5 py-8 md:py-14 mx-auto">
         <div className="flex flex-col">
@@ -173,7 +173,7 @@ const Goals = () => {
               Videography
             </h2>
             <p className="text-base leading-relaxed mt-2">
-              Harness the potential of video marketing to amplify your brand's
+              Harness the potential of video marketing to amplify your brands
               reach and engagement. With our expertise, your message will
               resonate with your audience, leaving a lasting impression and
               driving action.

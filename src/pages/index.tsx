@@ -60,6 +60,8 @@ import Goals from "@/components/Goals";
 import Team from "@/components/Team";
 import Image from "next/image";
 import Map from "@/components/Map";
+import Footer from "@/components/Footer";
+import AboutUs from "@/components/AboutUs";
 
 const bhineka = localFont({
   src: "../../public/fonts/Bhineka.ttf",
@@ -79,7 +81,20 @@ function App() {
   );
 
   return (
-    <div className="relative h-[100vh] z-10 ">
+    <div className=" h-[100vh] z-10 ">
+      <motion.div
+        style={{
+          opacity: imageOpacity,
+        }}
+        className="absolute w-full h-[100vh] hidden md:flex bottom-0  left-0 z-0 "
+      >
+        <Image
+          src="/fouremoji.png"
+          alt="Yellow BG"
+          fill
+          className="object-contain z-0 w-full h-auto  inset-0"
+        />
+      </motion.div>
       <Navbar />
       <motion.div
         className=" top-0 left-0 w-full h-auto bg-cover bg-center "
@@ -93,43 +108,47 @@ function App() {
         >
           <div className="flex justify-center items-start lg:items-center flex-col mt-10 py-4 md:py-20 px-8 md:px-2  ">
             <h1
-              className={`${bhineka.className} text-4xl md:text-6xl lg:text-8xl text-[#D61F27]`}
+              className={`${bhineka.className} text-4xl md:text-6xl lg:text-8xl text-[#D61F27] z-10`}
             >
               Insta Post PH
             </h1>
             <h1
-              className={`${raleway.className} text-justify w-full max-w-md font-semibold text-xs md:text-lg text-gray-400`}
+              className={`${raleway.className} text-justify w-full max-w-md font-semibold text-xs md:text-lg text-gray-700 z-10`}
             >
               content marketing and social media marketing agency, helping
               businesses thrive in the digital space, by delivering instant,
-              high-end quality content that sells
+              high-end quality{" "}
+              <span className="text-lg md:text-4xl font-semibold">
+                content that sells
+              </span>
             </h1>
             <Button className="bg-red-600 flex md:hidden mt-4 hover:bg-red-400">
               <Link href={"/"}>GET IN TOUCH</Link>
             </Button>
           </div>
-          <div className="w-full justify-center items-center flex p-8">
-            <img src="./intern.png" alt="" />
+          <div className="w-full relative justify-center h-72 md:h-auto items-center flex p-20">
+            <Image
+              src={"/intern.png"}
+              fill
+              alt="Intern"
+              className="object-contain h-auto z-10"
+            />
           </div>
         </motion.div>
       </motion.div>
+
       <div className="w-full h-auto relative">
-        <div className="w-full h-full bg-slate-500 relative z-20 ">
-          <Image
-            fill
-            alt="BG"
-            src={"/wavebg.png"}
-            className="object-cover absolute object-center"
-          />
-        </div>
+        <div className="w-full h-full bg-slate-500 relative z-20 "></div>
         <Team />
+      </div>
+      <div className="w-full h-[100vh] z-10 bg-yellow-400">
+        <Map />
       </div>
       <div className="bg-red-600 text-white  h-auto z-10">
         <Goals />
       </div>
-      <div className="w-full h-[100vh] z-10">
-        <Map />
-      </div>
+      <AboutUs />
+      <Footer />
     </div>
   );
 }
