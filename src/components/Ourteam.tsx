@@ -88,7 +88,7 @@ const Ourteam = () => {
             duration: 2,
           },
         }}
-        className="grid h-auto w-full gap-4 grid-cols-1 sm:grid-cols-3 lg:grid-cols-4"
+        className="grid h-auto w-full gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
       >
         {staff.map((item, index) => (
           <div

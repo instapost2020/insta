@@ -73,10 +73,10 @@ const raleway = Raleway({
 
 function App() {
   const { scrollY } = useScroll();
-  const imageOpacity = useTransform(scrollY, [0, 700], [1, 0]);
+  const imageOpacity = useTransform(scrollY, [0, 600], [1, 0]);
   const backgroundColor = useTransform(
     scrollY,
-    [0, 700],
+    [0, 500],
     ["rgba(0, 0, 0, 0)", "rgba(250,61,47,1.00)"]
   );
 
@@ -86,7 +86,7 @@ function App() {
         style={{
           opacity: imageOpacity,
         }}
-        className="absolute w-full h-[100vh] hidden md:flex bottom-0  left-0 z-0 "
+        className="absolute w-full h-[100vh] hidden lg:flex bottom-0  left-0 z-0 "
       >
         <Image
           src="/fouremoji.png"
@@ -113,12 +113,14 @@ function App() {
               Insta Post PH
             </h1>
             <h1
-              className={`${raleway.className} text-justify w-full max-w-md font-semibold text-xs md:text-lg text-gray-700 z-10`}
+              className={`${raleway.className} text-justify w-full md:max-w-xl font-semibold text-xs md:text-lg text-gray-700 z-10`}
             >
               content marketing and social media marketing agency, helping
               businesses thrive in the digital space, by delivering instant,
               high-end quality{" "}
-              <span className="text-lg md:text-4xl font-semibold">
+              <span
+                className={`${raleway.className} my-2 text-lg md:text-3xl font-semibold inline-block text-yellow-400 uppercase`}
+              >
                 content that sells
               </span>
             </h1>
@@ -126,12 +128,12 @@ function App() {
               <Link href={"/"}>GET IN TOUCH</Link>
             </Button>
           </div>
-          <div className="w-full relative justify-center h-72 md:h-auto items-center flex p-20">
+          <div className="w-full relative justify-center h-80 md:h-auto items-center flex p-20">
             <Image
               src={"/intern.png"}
               fill
               alt="Intern"
-              className="object-contain h-auto z-10"
+              className="object-contain w-full h-full z-10"
             />
           </div>
         </motion.div>
@@ -141,7 +143,7 @@ function App() {
         <div className="w-full h-full bg-slate-500 relative z-20 "></div>
         <Team />
       </div>
-      <div className="w-full h-[100vh] z-10 bg-yellow-400">
+      <div className="w-full h-auto pb-12 rounded-b-3xl pt-12 z-10 bg-yellow-400">
         <Map />
       </div>
       <div className="bg-red-600 text-white  h-auto z-10">

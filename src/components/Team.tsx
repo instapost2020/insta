@@ -14,7 +14,23 @@ const raleway = Raleway({
 
 const Team = () => {
   return (
-    <div className="h-auto  bg-yellow-400 pb-8 rounded-t-3xl md:pb-12">
+    <motion.div
+      initial={{
+        opacity: 0.5,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      animate={{
+        transition: {
+          duration: 10,
+        },
+      }}
+      viewport={{
+        margin: "300px",
+      }}
+      className="h-auto  bg-yellow-400 pb-8 rounded-t-3xl md:pb-12"
+    >
       <h1
         className={`${raleway.className} mb-12 py-8 text-4xl w-full font-bold uppercase text-center `}
       >
@@ -22,9 +38,9 @@ const Team = () => {
       </h1>
       <div className="grid h-auto px-4 gap-12 lg:gap-3 sm:grid-cols-2 lg:grid-cols-3">
         <div className="w-full py-4 px-8 bg-white justify-center items-end md:justify-end shadow-xl rounded-lg">
-          <div className="flex sm:float-end mx-auto md:mx-0 w-20 h-20 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
+          <div className="flex sm:float-end mx-auto md:mx-0 w-24 h-24 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
             <Image
-              src={"/jel.jpg"}
+              src={"/jelyellow.jpg"}
               fill
               alt="Jel"
               className="object-cover rounded-full borded-2 border-yellow-400"
@@ -47,7 +63,7 @@ const Team = () => {
           </div>
         </div>
         <div className="w-full py-4 px-8 bg-white justify-center items-end md:justify-end shadow-xl rounded-lg">
-          <div className="flex sm:float-end mx-auto md:mx-0 w-20 h-20 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
+          <div className="flex sm:float-end mx-auto md:mx-0 w-24 h-24 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
             <Image
               src={"/juls.jpg"}
               fill
@@ -72,7 +88,7 @@ const Team = () => {
           </div>
         </div>
         <div className="w-full py-4 px-8 bg-white justify-center items-end md:justify-end shadow-xl rounded-lg">
-          <div className="flex sm:float-end mx-auto md:mx-0 w-20 h-20 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
+          <div className="flex sm:float-end mx-auto md:mx-0 w-24 h-24 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
             <Image
               src={"/sarah.jpg"}
               fill
@@ -96,7 +112,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

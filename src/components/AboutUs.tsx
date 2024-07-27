@@ -26,9 +26,17 @@ const AboutUs = () => {
                 <h2 className="mb-6 max-w-lg text-5xl font-light  tracking-tight text-g1 sm:text-5xl">
                   Let&apos;s create
                   <span
-                    className={`${bhineka.className}  tracking-wide font-thin my-1 inline-block border-b-8 text-red-600 border-g4 px-4 text-5xl sm:text-6xl animate__animated animate__flash`}
+                    className={`${bhineka.className}  tracking-wide font-thin inline-block text-red-600 border-g4 px-4 text-5xl sm:text-6xl`}
                   >
                     Content that Sells
+                    <div className="relative w-full h-16">
+                      <Image
+                        src={"/blueline.png"}
+                        fill
+                        alt="Line"
+                        className="object-contain w-full h-full rotate-3"
+                      />
+                    </div>
                   </span>
                 </h2>
                 <p className="text-base text-gray-700">
@@ -58,7 +66,7 @@ const AboutUs = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                stroke-width="2"
+                strokeWidth="2"
               >
                 {/* <path
                   stroke-linecap="round"
