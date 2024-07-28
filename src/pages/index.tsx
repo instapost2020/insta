@@ -62,6 +62,7 @@ import Image from "next/image";
 import Map from "@/components/Map";
 import Footer from "@/components/Footer";
 import AboutUs from "@/components/AboutUs";
+import LogoMoving from "@/components/Marquee";
 
 const bhineka = localFont({
   src: "../../public/fonts/Bhineka.ttf",
@@ -149,6 +150,7 @@ function App() {
       <div className="bg-red-600 text-white  h-auto z-10">
         <Goals />
       </div>
+      <LogoMoving />
       <AboutUs />
       <Footer />
     </div>
