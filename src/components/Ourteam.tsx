@@ -85,7 +85,8 @@ const Ourteam = () => {
         }}
         animate={{
           transition: {
-            duration: 2,
+            duration: "10s",
+            delay: 2,
           },
         }}
         className="grid h-auto w-full gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"

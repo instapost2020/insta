@@ -14,7 +14,7 @@ const raleway = Raleway({
 const Objectives = () => {
   return (
     <div className="grid bg-yellow-400 rounded-3xl">
-      <div className="grid md:grid-cols-2 px-12 pt-8 items-center gap-4">
+      <div className="grid md:grid-cols-2 px-12 pt-8 pb-6 items-center gap-4">
         <div className="space-y-4">
           <h1
             className={`${bhineka.className} text-center font-semibold text-4xl md:text-6xl text-red-600`}

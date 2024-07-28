@@ -108,7 +108,7 @@ function App() {
         >
           <div className="flex justify-center items-start lg:items-center flex-col mt-10 py-4 md:py-20 px-8 md:px-2  ">
             <h1
-              className={`${bhineka.className} text-4xl md:text-6xl lg:text-8xl text-[#D61F27] z-10`}
+              className={`${bhineka.className} text-4xl md:text-6xl lg:text-8xl text-red-600 z-10`}
             >
               Insta Post PH
             </h1>
