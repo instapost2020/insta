@@ -19,10 +19,10 @@ const Objectives = () => {
           <h1
             className={`${bhineka.className} text-center font-semibold text-4xl md:text-6xl text-red-600`}
           >
-            M I S S I O N
+            M i s s i o n
           </h1>
           <p
-            className={`${raleway.className} text-md md:text-xl text-justify w-full lg:max-w-xl mx-auto text-gray-700`}
+            className={`${raleway.className} text-md md:text-xl text-justify w-full lg:max-w-xl mx-auto text-black`}
           >
             Insta Post Ph aims to revolutionize digital marketing by providing
             instant, high-end quality content that sells, empowering businesses
@@ -55,10 +55,10 @@ const Objectives = () => {
           <h1
             className={`${bhineka.className} text-center font-semibold text-4xl md:text-6xl text-red-600`}
           >
-            V I S I O N
+            V i s i o n
           </h1>
           <p
-            className={`${raleway.className} text-md md:text-xl text-justify w-full lg:max-w-xl mx-auto text-gray-700`}
+            className={`${raleway.className} text-md md:text-xl text-justify w-full lg:max-w-xl mx-auto text-black`}
           >
             Our vision is to become the leading authority in content marketing
             and social media marketing, known for our innovative strategies,

@@ -39,7 +39,7 @@ const Navbar = () => {
           ABOUT
         </Link>
         <Link
-          href={""}
+          href={"work"}
           className="hover:text-red-600 duration-200 transition-colors ease-out"
         >
           WORK
@@ -76,7 +76,7 @@ const Navbar = () => {
             <Link onClick={() => setStatus(!status)} href={"about"}>
               ABOUT
             </Link>
-            <Link onClick={() => setStatus(!status)} href={"/"}>
+            <Link onClick={() => setStatus(!status)} href={"work"}>
               WORK
             </Link>
             <Link onClick={() => setStatus(!status)} href={"/"}>

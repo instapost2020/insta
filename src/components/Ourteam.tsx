@@ -28,7 +28,7 @@ const Ourteam = () => {
     {
       name: "Sarah De Guzman Napay",
       position: "General Manager",
-      photo: "/saryellow.jpg",
+      photo: "/sarahyellow.jpg",
     },
     {
       name: "Charrish Mae Napay",
@@ -43,7 +43,7 @@ const Ourteam = () => {
     {
       name: "Maria Trexie Hamilton",
       position: "Senior Graphic Artist",
-      photo: "/trexyellow.jpg",
+      photo: "/trexxx.jpg",
     },
     {
       name: "Ma. Kristina Villar",

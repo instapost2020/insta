@@ -81,7 +81,7 @@ const LogoMoving = () => {
     );
   };
   return (
-    <div className="h-auto w-full mx-auto relative py-12 px-3 md:px-24 inset-0">
+    <div className="h-auto w-full mx-auto relative py-12 px-3 md:px-20 inset-0">
       <h1
         className={`${raleway.className} italic tracking-widest text-center text-3xl uppercase font-semibold text-gray-400`}
       >

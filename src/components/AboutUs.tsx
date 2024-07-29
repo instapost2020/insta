@@ -34,7 +34,7 @@ const AboutUs = () => {
                         src={"/blueline.png"}
                         fill
                         alt="Line"
-                        className="object-contain w-full h-full rotate-3"
+                        className="object-contain w-full h-full rotate-6 -mt-5"
                       />
                     </div>
                   </span>

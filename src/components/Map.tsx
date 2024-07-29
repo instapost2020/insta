@@ -23,8 +23,9 @@ const Map = () => {
           >
             Insta Post PH
           </span>{" "}
-          delivers Instant & Top Quality Output. Your All-In-One Creative Team.
-          We generate results. We create CONTENT THAT SELLS. We strategize with
+          delivers Instant & Top Quality Output. Your{" "}
+          <span className="inline-block">All-In-One</span> Creative Team. We
+          generate results. We create CONTENT THAT SELLS. We strategize with
           you. We study the competitors.
         </h4>
       </div>

@@ -65,7 +65,7 @@ const Team = () => {
         <div className="w-full py-4 px-8 bg-white justify-center items-end md:justify-end shadow-xl rounded-lg">
           <div className="flex sm:float-end mx-auto md:mx-0 w-24 h-24 relative justify-end max-w-md py-4 px-8 shadow-lg rounded-full  -mt-16">
             <Image
-              src={"/juls.jpg"}
+              src={"/julyellow.jpg"}
               fill
               alt="Jel"
               className="object-cover rounded-full borded-2 border-yellow-400"
